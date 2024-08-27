@@ -6,7 +6,7 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 14:38:39 by okrahl            #+#    #+#             */
-/*   Updated: 2024/08/27 14:44:11 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/08/27 15:59:52 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,34 +16,19 @@
 
 int main()
 {
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	delete j;
-	delete i;
+	// Animal* a = new Animal();
 
-	const int numAnimals = 10;
-	Animal* animals[numAnimals];
-	
-	for (int k = 0; k < numAnimals / 2; ++k)
-	{
-		animals[k] = new Dog();
-	}
-	
-	for (int k = numAnimals / 2; k < numAnimals; ++k)
-	{
-		animals[k] = new Cat();
-	}
+	const Animal* dog = new Dog();
+	const Animal* cat = new Cat();
 
-	Dog originalDog;
-	Dog copiedDog = originalDog;
+	std::cout << dog->getType() << " makes sound: ";
+	dog->makeSound();
 
-	Cat originalCat;
-	Cat copiedCat = originalCat;
+	std::cout << cat->getType() << " makes sound: ";
+	cat->makeSound();
 
-	for (int k = 0; k < numAnimals; ++k)
-	{
-		delete animals[k];
-	}
+	delete dog;
+	delete cat;
 
 	return 0;
 }

@@ -6,7 +6,7 @@
 #    By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/27 13:51:17 by okrahl            #+#    #+#              #
-#    Updated: 2024/08/27 14:48:01 by okrahl           ###   ########.fr        #
+#    Updated: 2024/08/27 15:56:33 by okrahl           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ OBJ_DIR = obj
 SRC_DIR = src
 
 # EXECUTABLE NAME
-NAME = Brain
+NAME = AbstractClass
 
 # SOURCE FILES
 SRCS =	main.cpp \
