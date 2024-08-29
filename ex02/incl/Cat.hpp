@@ -6,7 +6,7 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 14:15:52 by okrahl            #+#    #+#             */
-/*   Updated: 2024/08/27 14:22:18 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/08/29 17:50:23 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,5 @@ class Cat : public Animal
 
 		void makeSound()const;
 		std::string getType()const;
+
 };

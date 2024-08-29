@@ -6,7 +6,7 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 14:17:54 by okrahl            #+#    #+#             */
-/*   Updated: 2024/08/27 14:51:46 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/08/29 17:50:18 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,5 @@ class Brain
 
 		std::string getIdea(int i)const;
 		void setIdea(int i, const std::string &idea);
+
 };
