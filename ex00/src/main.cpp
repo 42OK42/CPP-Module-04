@@ -6,7 +6,7 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 14:38:39 by okrahl            #+#    #+#             */
-/*   Updated: 2024/08/27 14:15:19 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/08/30 14:48:18 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,28 @@
 
 int main()
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	const WrongAnimal* wrongmeta = new WrongAnimal();
-	const WrongAnimal* wrongj = new WrongCat();
+	const Animal *animal = new Animal();
+	const Animal *dog = new Dog();
+	const Animal *cat = new Cat();
+	const WrongAnimal* wronganimal = new WrongAnimal();
+	const WrongAnimal* wrongcat = new WrongCat();
 	
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
+	std::cout << cat->getType() << " " << std::endl;
+	cat->makeSound(); //will output the cat sound!
 
-	wrongj->makeSound();
-	wrongmeta->makeSound();
+	std::cout << dog->getType() << " " << std::endl;
+	dog->makeSound();
 
-	delete meta;
-	delete j;
-	delete i;
-	delete wrongmeta;
-	delete wrongj;
+	animal->makeSound();
+	wronganimal->makeSound();
+
+	wrongcat->makeSound();
+
+	delete animal;
+	delete dog;
+	delete cat;
+	delete wronganimal;
+	delete wrongcat;
 
 	return 0;
 }
